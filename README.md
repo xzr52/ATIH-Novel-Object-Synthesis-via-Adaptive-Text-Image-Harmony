@@ -11,22 +11,7 @@ Xiang Li<sup>3</sup> · Gan Sun<sup>4</sup> ·Jian Yang<sup>1</sup> · Jun Li<su
 <a href="https://arxiv.org/abs/2410.20823"><img src="https://img.shields.io/badge/arXiv-2410.20823-b31b1b.svg" height=20.5></a>
 <a href="https://xzr52.github.io/ATIH/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=red" height=20.5></a> 
 </div>
-<!-- <table style="width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
-  <tr>
-    <td style="border: none; padding: 0; width: 25%;">
-      <img src="examples/readme_image/horse.gif" style="width: 100%; display: block;">
-    </td>
-    <td style="border: none; padding: 0; width: 25%;">
-      <img src="examples/readme_image/lion.gif" style="width: 100%; display: block;">
-    </td>
-    <td style="border: none; padding: 0; width: 25%;">
-      <img src="examples/readme_image/mouse.gif" style="width: 100%; display: block;">
-    </td>
-    <td style="border: none; padding: 0; width: 25%;">
-      <img src="examples/readme_image/owl.gif" style="width: 100%; display: block;">
-    </td>
-  </tr>
-</table> -->
+
 <table style="width: 100%; border-collapse: collapse; border: none; margin: 0; padding: 0;">
   <tr style="border: none;">
     <td style="border: none; padding: 0; width: 25%;">
@@ -100,7 +85,7 @@ To set up the environment for running the code, follow these steps:
 
 ## 🚀 **2. Quick Start**
 
-We provide a Gradio-based application for an intuitive user interface to interact with the framework.
+We provide a Gradio-based application for an intuitive user interface to interact with the framework.Our code is designed to run on two GPUs, each with 24GB of memory, by default. If your single GPU has more than 30GB of memory, you can modify the code by setting device2 to the same as device1, allowing the program to run on a single GPU.
 
 To launch the app locally:
 ```python
@@ -110,7 +95,7 @@ python app.py
 ## 🖼️ **3. Inference One Image**
 To perform inference on a single image, use the following command:
 ```python
-python inference_one_image.py --image_path examples/rabbit.png --target_prompt 'peacock'
+python inference_one_image.py --image_path examples/rabbit.png --target_prompt 'cock'
 ```
 - `--image_path`: Path to the input image.
 - `--target_prompt`: Text description of the object.

@@ -15,8 +15,8 @@ from PIL import Image
 import numpy as np
 from groundingdino.util.inference import Model
 import json
-DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
+device2=torch.device("cuda:1")
+device=torch.device("cuda:0")
 print("Loading pipeline components(step1)...........")
 GROUNDING_DINO_CONFIG_PATH = "GroundingDino/Ground_DINO_config/GroundingDINO_SwinT_OGC.py"
 GROUNDING_DINO_CHECKPOINT_PATH = "ckpts/groundingdino_swint_ogc.pth"
@@ -28,8 +28,6 @@ print("(step1)...........")
 
 cfg = RunConfig(model_type = Model_Type.SDXL_Turbo, scheduler_type = Scheduler_Type.EULER)
 with torch.no_grad():
-    device2=torch.device("cuda:1")
-    device=torch.device("cuda:0")
     pipe_inversion, pipe_inference = get_pipes(Model_Type.SDXL_Turbo, Scheduler_Type.EULER, device=device)
     ImageSimmodel = ImageSimilarityModel(device2)
 print("(step2)...........")
@@ -72,7 +70,7 @@ def main(image, prompt, certain_step, certain_vary, seed):
     return final_image, formatted_html
 
 examples = [
-    ["examples/rabbit.png", "peacock", 0, 0, 42],
+    ["examples/rabbit.png", "cock", 0, 0, 42],
     ["examples/glass2jar.png", "European fire salamander", 0, 0, 42],
     ["examples/wolf.png", "bighorn", 0, 0, 42],
     ["examples/car.png", "airship", 0, 0, 42],
