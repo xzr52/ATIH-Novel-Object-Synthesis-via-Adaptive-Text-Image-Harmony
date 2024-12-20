@@ -131,14 +131,13 @@ We deeply appreciate their contributions , which have been instrumental to our w
 
 # 📖BibTeX
 ```
-@misc{xiong2024novelobjectsynthesisadaptive,
-      title={Novel Object Synthesis via Adaptive Text-Image Harmony}, 
-      author={Zeren Xiong and Zedong Zhang and Zikun Chen and Shuo Chen and Xiang Li and Gan Sun and Jian Yang and Jun Li},
-      year={2024},
-      eprint={2410.20823},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.20823}, 
+@inproceedings{
+  xiong2024novel,
+  title={Novel Object Synthesis via Adaptive Text-Image Harmony},
+  author={Zeren Xiong and Ze-dong Zhang and Zikun Chen and Shuo Chen and Xiang Li and Gan Sun and Jian Yang and Jun Li},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  year={2024},
+  url={https://openreview.net/forum?id=ENLsNDfys0}
 }
 ```
 
