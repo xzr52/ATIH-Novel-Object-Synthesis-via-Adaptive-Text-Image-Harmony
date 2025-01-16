@@ -74,7 +74,7 @@ To set up the environment for running the code, follow these steps:
     export CUDA_HOME=/usr/local/cuda
     ```
 
-4. Clone the required submodule:
+4. Install the required submodule:
     ```bash
     cd GroundingDino
     pip install -e .
