@@ -48,7 +48,7 @@ Xiang Li<sup>3</sup> · Gan Sun<sup>4</sup> ·Jian Yang<sup>1</sup> · Jun Li<su
 
 
 ## 🚀 **News**
-- **2024.11.12**: 🎉 Our code is released! Explore the possibilities of novel object synthesis with our framework.
+- **2024.12.20**: 🎉 Our code is released! Explore the possibilities of novel object synthesis with our framework.
 
 
 
