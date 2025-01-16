@@ -36,8 +36,7 @@ class MutualSelfAttentionControl(AttentionBase):
         self.start_layer = start_layer
         self.layer_idx = layer_idx if layer_idx is not None else list(range(start_layer, self.total_layers))
         self.step_idx = step_idx if step_idx is not None else list(range(start_step, total_steps))
-        print("MasaCtrl at denoising steps: ", self.step_idx)
-        print("MasaCtrl at U-Net layers: ", self.layer_idx)
+
 
     def attn_batch(self, q, k, v, sim, attn, is_cross, place_in_unet, num_heads, **kwargs):
         """
